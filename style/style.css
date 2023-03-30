@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box; /*обнуляем все*/
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto; /*блочный элемент становится по центру*/
+    position: relative;
+}
+
+.promo {
+    height: 800px;
+    background: url('../img/backgro/main_bg.jpg') center center/cover no-repeat; /*по оси х и по оси у будет стоять посередине, cover означает, что будет растянута. Между последним центром и ковер надо поставить слеш, все эти данные смотрим и берем из https: //cssreference.io/backgrounds/ в самом низу background*/
+    padding: 38px 0 62px 0;
+}
+
+.logo .logo_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo_text {
+    
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px; /*расстояние между строками*/
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 9.5px;
+    color: #FFFFFF;
+    margin-bottom: 53px;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 41px;
+    /* line-height: 41px; */
+    text-transform: uppercase;
+    color: #F9BF3B;
+    text-align: center;
+}
+.simple .title_big {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    /* line-height: 80px; */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 20.5px 0 20.5px 0;
+}
+
+.promo .promo_text {
+    padding: 0 13px;
+    font-family: 'Roboto Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 22.5px;
+    text-align: center;
+}
+.promo .promo_text span {
+    text-transform: uppercase;
+    color: #F9BF3B;
+    font-family: 'Roboto - bolt';
+    font-weight: 700;
+    
+}
+.promo .promo_btn, .bonus .bonus_btn {
+    display: block;
+    margin: 73px auto;  /*ставим 73, чтобі отодвинуть по вертикали как в макете, а авто остается для расположения по центру. Если оставить 0 вместо 73, то тогда марджин73 надо указывать под 0 авто, иначе не сработает отступ сверху*/
+    width: 313px;
+    height: 72px;
+    background-image: linear-gradient(to top, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    /*стилизуем текст в бтн*/
+    font-family: 'RobotoCondensed';
+    font-size: 21px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    cursor: pointer; /*при наведении мышки будет рука, а не стрелка*/
+}
+.more .more_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+.more .more_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 4.5px;
+}
+
+/*вторая секция*/
+.waiting {
+    min-height: 607px; /*ставим мин, чтобы при увеличении контента ширина адаптировалась*/
+    background: #EFEFEF;
+    padding: 85px 0 75px 0;
+}
+.waiting .waiting_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #252525;
+    text-align: center;
+}
+.waiting .waiting_subheader {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        text-align: center;
+        color: #4A4A4A;
+        margin-top: 18.5px;
+}
+.waiting .waiting_divider, .finish .finish_divider {
+    width: 220px;
+    height: 7px;
+    background: #F9BF3B;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+/*оболочка для лого-комп*/
+.waiting .waiting_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.waiting .waiting_wrapper .waiting_item {
+    /* display: inline-block;  будут строчно блочніми єлементами */
+    /* vertical-align: top; выравниваем по верху */
+    width: 339px;
+    text-align: center;
+    
+}
+.waiting .waiting_wrapper .waiting_item .waiting_img {
+    width: 100%; /*устанавливает 100% от родителя, если вставим другую картинку, то верствка не поедет и не поломается, а картинка сожмется*/
+}
+.waiting .waiting_wrapper .waiting_item .waiting_descr {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #4A4A4A;
+    margin-top: 26px;
+    line-height: 21px;
+}
+
+/*секция с женщиной*/
+.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+.optimization .optimization_header {
+    margin-left: 391px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+.optimization .optimization_text {
+    margin-left: 391px;
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+}
+.optimization .optimization_text span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+}
+.optimization .optimization_img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/backgro/section3.jpg') center center/cover no-repeat;
+}
+
+.finish .finish_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EFEFEF;
+}
+
+.finish_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+    
+}
+
+.finish_wrapper .finish_item .finish_text {
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #EFEFEF;
+    
+}
+.finish_wrapper .finish_item {
+    margin: 0 auto;
+    width: 226px;
+}
+
+.finish_wrapper .finish_item .finish_img {
+    display: flex;
+    margin: 0 auto;
+}
+
+/*роздел с подарком*/
+.bonus {
+    background-color: #EFEFEF;
+    min-height: 631px;
+    padding: 88px 0 88px 0;
+}
+
+.bonus .bonus_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.bonus .bonus_text {
+    text-align: center;
+    margin-top: 45px;
+}
+.bonus .bonus_btn {
+    margin-top: 51px;
+}
+
+.record {
+    min-width: 514px;
+    padding: 81px 0 52px 0;
+}
+.record .record_img {
+    display: block;
+    margin: 0 auto;
+}
+.record .record_text {
+    margin-top: 36px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.record .record_time {
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+     color: #299CBD;
+}
+.record .record_finish {
+    margin-top: 24.5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+/*footer*/
+.foot {
+    background: url('../img/backgro/footer.jpg') center center/cover no-repeat;
+    min-height: 169px;
+    padding: 57px 0 69px 0;
+}
+
+.foot .foot_link .foot_link_a , .foot .foot_link .foot_link_ar{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration-line: underline;
+    color: #888888;
+    /* margin: 0 auto; */
+}
+
+.foot .foot_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 407px;
+    margin: 0 auto;
+}
+.foot .foot_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #888888;
+    text-decoration: none;
+}
